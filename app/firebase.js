@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBxXgF_Skv7lzjZ6GP2rHy9ocDokfegX20",
-  authDomain: "expense-tracker-v2-4ea08.firebaseapp.com",
-  projectId: "expense-tracker-v2-4ea08",
-  storageBucket: "expense-tracker-v2-4ea08.appspot.com",
-  messagingSenderId: "360735084981",
-  appId: "1:360735084981:web:1b8bb6f1d833ea3edfc9fc"
+  apiKey: process.env.NEXT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_APP_MESSAGING_SENDER,
+  appId: process.env.NEXT_APP_APP_ID
 };
 
 // Initialize Firebase
